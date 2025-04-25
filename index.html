@@ -204,7 +204,50 @@
             border-radius: 8px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-        
+        /* About Section */
+.about {
+    padding: 5rem 0;
+    background: #fff;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.skills-list {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.skills-list li {
+    margin-bottom: 0.8rem;
+}
+
+.skills-list .fa-check {
+    color: #8A4FFF;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .profile-image {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
         /* Contact Section */
         .contact {
             padding: 5rem 0;
