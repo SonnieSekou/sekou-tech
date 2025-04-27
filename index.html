@@ -1,0 +1,597 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEKOU DIGITALZ TECH | Web & Mobile Development</title>
+    <meta name="description" content="Professional web and mobile app development services by SEKOU DIGITALZ TECH. We build fast, secure, and scalable digital solutions.">
+    <meta name="keywords" content="web development, mobile apps, software development, digital solutions, tech services">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+.header-logo {
+    height: 50px;
+    width: auto;
+    transition: opacity 0.3s;
+}
+
+.header-logo:hover {
+    opacity: 0.8;
+}
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .logo span {
+            color: #3498db;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+        }
+        
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #3498db;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #2980b9;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 5rem 0;
+            background: #fff;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }<div class="service-card">
+    <i class="fas fa-pencil-alt" style="color: #8A4FFF;"></i>
+    <h3>Logo & Brand Design</h3>
+    <p>Professional logo creation and brand identity packages including:</p>
+    <ul class="service-features">
+        <li><i class="fas fa-check"></i> Custom Logo Design</li>
+        <li><i class="fas fa-check"></i> Brand Style Guides</li>
+        <li><i class="fas fa-check"></i> Business Card Design</li>
+        <li><i class="fas fa-check"></i> Social Media Kits</li>
+    </ul>
+</div>
+        
+        .service-card {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-card i {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card h3 {
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 5rem 0;
+            background: #f1f1f1;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+        }
+        
+        .about-text p {
+            margin-bottom: 1rem;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        /* About Section */
+.about {
+    padding: 5rem 0;
+    background: #fff;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.skills-list {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.skills-list li {
+    margin-bottom: 0.8rem;
+}
+
+.skills-list .fa-check {
+    color: #8A4FFF;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .profile-image {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+        /* Contact Section */
+        .contact {
+            padding: 5rem 0;
+            background: #fff;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+        
+        .form-group textarea {
+            height: 150px;
+        }
+        <!-- ======= About Section ======= -->
+<section class="about" id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="profile-image">
+                <img src="images/profile.jpg" alt="Sekou Profile">
+            </div>
+            <div class="about-text">
+                <p>Hi! I'm Sekou, a professional logo designer with 3+ years of experience creating brand identities that make businesses stand out.</p>
+                <ul class="skills-list">
+                    <li><i class="fas fa-check"></i> Adobe Illustrator Expert</li>
+                    <li><i class="fas fa-check"></i> Brand Strategy</li>
+                    <li><i class="fas fa-check"></i> Print Design</li>
+                </ul>
+                <a href="#contact" class="btn">Get Your Logo</a>
+            </div>
+        </div>
+    </div>
+</section>  
+        <!-- Social Media Links -->
+<div class="social-links" style="margin-top: 20px;">
+    <!-- [PASTE THE CODE BLOCK FROM OPTION 1 HERE] -->
+</div>
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-column ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: #3498db;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: #fff;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #3498db;
+        }
+        
+        .copyright {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #444;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-image {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#home">
+                   <img src="images/logo.png" alt="Sekou Digitalz Logo" class="header-logo">
+              </a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Innovative Digital Solutions</h1>
+                <p>We build high-performance web and mobile applications tailored to your business needs. Our team delivers secure, scalable, and user-friendly digital experiences.</p>
+                <a href="#contact" class="btn">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+            </div>
+            <div class="services-grid">
+            <div class="service-card">
+    <i class="fas fa-pencil-alt" style="color: #8A4FFF;"></i>
+    <h3>Logo & Brand Design</h3>
+    <p>Professional logo creation and brand identity packages including:</p>
+    <ul class="service-features">
+        <li><i class="fas fa-check"></i> Custom Logo Design</li>
+        <li><i class="fas fa-check"></i> Brand Style Guides</li>
+        <li><i class="fas fa-check"></i> Business Card Design</li>
+        <li><i class="fas fa-check"></i> Social Media Kits</li>
+    </ul>
+</div>
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Custom websites and web applications built with modern technologies like React, Node.js, and Django for optimal performance.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile App Development</h3>
+                    <p>Cross-platform mobile applications for iOS and Android using Flutter and React Native for cost-effective solutions.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Database Solutions</h3>
+                    <p>Secure and scalable database architecture with PostgreSQL, MongoDB, and Firebase for reliable data management.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Services</h3>
+                    <p>Deployment and management on AWS, Google Cloud, and Azure for high availability and global reach.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-search"></i>
+                    <h3>SEO Optimization</h3>
+                    <p>Improve your search engine rankings and online visibility with our comprehensive SEO strategies.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Cyber Security</h3>
+                    <p>Protect your digital assets with our security audits, penetration testing, and implementation of best practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About SEKOU DIGITALZ TECH</h2>
+                    <p>Founded in 2023, SEKOU DIGITALZ TECH is a full-service digital development agency specializing in creating innovative web and mobile solutions for businesses of all sizes.</p>
+                    <p>Our team of experienced developers, designers, and digital strategists work together to deliver exceptional results that drive business growth and enhance user experiences.</p>
+                    <p>We believe in transparent communication, agile development processes, and building long-term partnerships with our clients.</p>
+                    <a href="#contact" class="btn">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Our team working">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+   
+<div class="social-links" style="margin-top: 20px;">
+</div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>SEKOU DIGITALZ TECH</h3>
+                    <p>Innovative digital solutions for modern businesses. We build the future of your digital presence.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Cloud Solutions</a></li>
+                        <li><a href="#">SEO Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> sonniesekoujr@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +237 650 760 516</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Cameroon</li>
+                    </ul>
+                    <div class="social-links">
+    <a href="https://www.facebook.com/SekouSonnie" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://wa.me/231881195769" 
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://instagram.com/sekou.sonnie.7"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+</div>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission handling
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! We will contact you soon.');
+                this.reset();
+            });
+        }
+    </script>
+</body>
+</html>
